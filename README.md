@@ -1,4 +1,4 @@
-#RSS-Reader-application
+# RSS-Reader-application
 ## How to run this Application?
 Step 1: <br/>
 First step is to clone the application from the repository. it can be done by running the following command: <br/>
