@@ -26,3 +26,4 @@ Route::get('/url/{id}',[URLController::class,'show']);
 Route::put('/url/{id}',[URLController::class,'update']);
 Route::delete('/url/{id}',[URLController::class,'destroy']);
 Route::post('/posts',[PostController::class,'GetPosts']);
+// Route::post('/url',[URLController::class,'store']);
