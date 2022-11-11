@@ -43,7 +43,7 @@ class RssItemsJob implements ShouldQueue
         
 $urls = $this->urls;
 
-        $response = Http::post(env("RSS_PARSER_URL", "http://localhost:5000/getdata"), ["urls" => $urls])->json();
+        $response = Http::post(env("RSS_PARSER_URL", "http://localhost:9000/getdata"), ["urls" => $urls])->json();
 //    dd($response);
         foreach($response['items'] as $post){
         $id = Url::where('url', $post['SourceURL'])->value('id');
